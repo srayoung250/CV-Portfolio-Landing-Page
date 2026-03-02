@@ -15,23 +15,27 @@ body {
 }
 
 header {
-  display: flex;
+  background-color: #24252a;
+  width: 100%;
+  padding: 20px 10%;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  background-color: #24252a;
-  padding: 20px 10%;
-  box-shadow: 0px 4px 8px rgb(0, 0, 0);
+  display: flex;
 }
 
 .logo {
   color: #e4ebed;
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
-  padding: 2px 2px 2px 2px;
+  display: flex;
+  justify-content: space-between;
   border: rgba(234, 201, 117, 0.8) solid 4px;
-  border-radius: 1px;
-  margin-right: auto;
+  border-radius: 2px;
+  padding: 2px 2px 2px 2px;
+  a {
+    text-decoration: none;
+    color: #e4ebed;
+  }
 }
 
 .side_bar {
@@ -96,16 +100,6 @@ header {
   color: rgba(234, 201, 117, 0.8);
 }
 
-.logo {
-  color: #e4ebed;
-  font-size: 40px;
-  font-family: "Montserrat", sans-serif;
-  padding: 2px 2px 2px 2px;
-  border: rgba(234, 201, 117, 0.8) solid 4px;
-  border-radius: 1px;
-  margin-right: auto;
-}
-
 .about_me {
   flex-grow: 1;
   padding: 30px;
@@ -116,6 +110,10 @@ header {
     color: rgba(234, 201, 117, 0.8);
     text-shadow: #24252a 2px 2px 4px;
   }
+}
+
+.menubutton {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -156,8 +154,4 @@ footer p {
   padding: 10px 5% 20px;
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-}
-
-.menubutton {
-  display: none;
 }
